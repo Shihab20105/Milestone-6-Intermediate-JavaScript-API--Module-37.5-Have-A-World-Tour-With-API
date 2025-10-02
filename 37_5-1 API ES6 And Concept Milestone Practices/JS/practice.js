@@ -129,3 +129,25 @@ const displayBillionaireDetails = billionaire => {
 // Initial Load (first 10 billionaires)
 loadBillionaires("", 10);
 
+/* 
+_____________________________________________________________________________________________
+
+✅ What stayed the same as my version:
+
+* Same HTML structure (search-field, btn-search, billionaires-container, no-found-message, show-all, loader).
+
+* Same flow: search → loader → show results → show all → modal.
+
+* Same separation of functions (loadBillionaires, displayBillionaires, processSearch, etc.).
+
+✅ What changed:
+
+* Fixed API call (forbes400.onrender.com).
+
+* Removed phone API leftovers.
+
+* Modal IDs corrected (billionaireDetailModalLabel, billionaire-details).
+
+* Details show name, net worth, industry, country, rank, bio.
+*/
+
